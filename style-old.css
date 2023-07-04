@@ -5,22 +5,17 @@ body {
   background: #eee;
   color: #333;
   text-align: justify;
-  font: 400 100%/2 "Open Sans", sans-serif;
+  font: 400 75%/1.5 "Open Sans", sans-serif;
 }
 h1 {
+  margin-top: 0;
   margin-bottom: 0;
   font-family: "Droid Serif";
-  color: #333;
-  line-height: 1.5;
+  color: #4a8dcc;
 }
 h3 {
   margin-bottom: 0;
   color: #9ea46b;
-  font-size: 150%;
-}
-.subheader {
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 hr {
   border: 0;
@@ -29,11 +24,15 @@ hr {
   background-color: #9ea46b;
 }
 header {
+  position: relative;
+  top: 100px;
+  left: 135px;
   margin: 0 auto;
   text-align: center;
   width: 700px;
+  height: 90px;
   font-size: 150%;
-  color: #444;
+  color: #999;
   z-index: 9;
 }
 section {
@@ -51,6 +50,7 @@ footer {
 }
 #container {
   position: relative;
+  top: -20px;
   margin: 0 auto;
   width: 1160px;
   background-color: #fff;
@@ -59,23 +59,24 @@ footer {
   border-bottom: 10px solid #333;
   overflow: hidden;
 }
-#menu {
-  font-size: 150%;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 0.5em;
+.fb {
+  line-height: 20px;
+  vertical-align: middle;
+}
+.fb img {
+  display: inline;
+  width: 20px;
+}
+.imageCol {
+  float: left;
+  width: 25%;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
+  color: #999;
 }
-#menu a {
-  text-decoration: underline;
-}
-#menu a:link,
-#menu a:visited {
-  text-decoration: underline;
-}
-#menu a:hover,
-#menu a:active {
-  color: #9ea46b;
+.submerged {
+  margin-top: 120px;
 }
 a:link,
 a:visited {
@@ -97,41 +98,46 @@ a:active {
   .imageCol {
     width: 20%;
   }
+  div img {
+    width: 100%;
+  }
   footer {
     margin: 5px 0;
   }
 }
 @media only screen and (max-width: 1020px) {
   header {
-    width: auto;
+    width: 600px;
+    top: 110px;
+    left: 100px;
     font-size: 120%;
   }
   .imageCol {
     width: 18%;
   }
 }
-
-header {
-  width: auto;
+@media only screen and (max-width: 850px) {
+  header {
+    top: 0;
+    left: 0;
+    color: #444;
+    width: auto;
+    font-size: 100%;
+  }
+  section {
+    float: none;
+    width: 64%;
+  }
+  .submerged {
+    margin-top: 0;
+  }
+  .imageCol {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26%;
+  }
 }
-
-section {
-  width: 60%;
-}
-.imageCol {
-  position: absolute;
-  top: 50px;
-  right: 30px;
-  width: 30%;
-}
-
-.foredrag {
-  position: absolute;
-  top: 50px;
-  right: 30px;
-  width: 30%;
-}
-
 @media only screen and (max-width: 480px) {
   header {
     height: auto;
